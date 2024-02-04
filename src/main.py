@@ -11,11 +11,11 @@ from rich import print
 # Connect to MariaDB plataform
 try:
     conn = mariadb.connect(
-        user='user',
-        password='password',
+        user='root',
+        password='root@server',
         host='localhost',
         port=3306,
-        database='database'
+        database='password_manager'
     )
 except mariadb.Error as e:
     print(f'Erro connecting to MariaDB plataform: {e}')
